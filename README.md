@@ -28,9 +28,9 @@ GlobalSolutionFront/
 |   |-- logo.svg
 |   `-- member-placeholder.svg
 |-- css/
-|   `-- style.css
+|   `-- main.css
 |-- js/
-|   `-- script.js
+|   `-- main.js
 |-- contato.html
 |-- faq.html
 |-- index.html
@@ -59,6 +59,9 @@ GlobalSolutionFront/
 - Abas interativas para simular eventos detectados.
 - Modal de detalhes para cada alerta orbital.
 - Layout responsivo para celular, tablet e desktop.
+- CSS concentrado em `css/main.css`.
+- JavaScript concentrado em `js/main.js`.
+- Scripts carregados no `<head>` com o atributo `defer`.
 
 ## Autores e creditos
 

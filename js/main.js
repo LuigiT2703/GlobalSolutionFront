@@ -1,3 +1,6 @@
+
+// js\navigation\menu.js
+
 const menuButton = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 
@@ -8,12 +11,19 @@ if (menuButton && siteNav) {
   });
 }
 
+
+// js\navigation\active-link.js
+
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
 document.querySelectorAll(".site-nav a").forEach((link) => {
   if (link.getAttribute("href") === currentPage) {
     link.classList.add("is-active");
   }
 });
+
+
+// js\components\tabs.js
 
 document.querySelectorAll("[data-tabs]").forEach((tabs) => {
   const buttons = tabs.querySelectorAll("[data-tab]");
@@ -31,32 +41,43 @@ document.querySelectorAll("[data-tabs]").forEach((tabs) => {
   });
 });
 
+
+// js\components\accordion.js
+
 document.querySelectorAll("[data-accordion] .faq-question").forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.closest(".faq-item");
-    item.classList.toggle("is-open");
+
+    if (item) {
+      item.classList.toggle("is-open");
+    }
   });
 });
+
+
+// js\components\modal.js
 
 const modal = document.querySelector("#infoModal");
 const modalTitle = document.querySelector("#modalTitle");
 const modalText = document.querySelector("#modalText");
 const modalClose = document.querySelector(".modal__close");
 
+function closeModal() {
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+}
+
 document.querySelectorAll(".modal-open").forEach((button) => {
   button.addEventListener("click", () => {
+    if (!modal || !modalTitle || !modalText) return;
+
     modalTitle.textContent = button.dataset.modalTitle;
     modalText.textContent = button.dataset.modalText;
     modal.classList.add("is-open");
     modal.setAttribute("aria-hidden", "false");
   });
 });
-
-function closeModal() {
-  if (!modal) return;
-  modal.classList.remove("is-open");
-  modal.setAttribute("aria-hidden", "true");
-}
 
 if (modalClose) {
   modalClose.addEventListener("click", closeModal);
@@ -70,7 +91,14 @@ if (modal) {
   });
 }
 
+
+// js\forms\contact-validation.js
+
 const contactForm = document.querySelector("#contactForm");
+
+function validateEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
 
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
@@ -84,7 +112,7 @@ if (contactForm) {
       {
         input: document.querySelector("#email"),
         message: "Informe um e-mail valido.",
-        validate: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+        validate: validateEmail
       },
       {
         input: document.querySelector("#message"),
@@ -108,6 +136,7 @@ if (contactForm) {
     });
 
     const status = document.querySelector("#formStatus");
+
     if (isValid) {
       status.textContent = "Mensagem validada com sucesso. Envio simulado para a entrega academica.";
       contactForm.reset();
@@ -116,3 +145,7 @@ if (contactForm) {
     }
   });
 }
+
+
+// Inicializacao geral
+console.log('OrbitAlert carregado.');
