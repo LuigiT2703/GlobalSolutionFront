@@ -1,6 +1,14 @@
-# VitaAlert
+# OrbitAlert
 
-Projeto academico de Front-End para a Global Solution 2026 da FIAP. O VitaAlert e uma plataforma web responsiva para apresentar alertas ambientais, orientacoes de saude e monitoramento comunitario em situacoes de risco.
+Projeto academico de Front-End para a Global Solution 2026 da FIAP. O OrbitAlert e uma plataforma web responsiva que simula o uso de dados orbitais para identificar regioes vulneraveis, classificar riscos ambientais e orientar moradores com alertas, rotas seguras e pontos de apoio.
+
+## Problema
+
+Eventos climaticos e ambientais podem evoluir rapidamente, deixando moradores sem tempo para reagir. A falta de uma visualizacao simples sobre areas criticas, rotas e orientacoes dificulta a prevencao e aumenta o impacto das emergencias.
+
+## Solucao proposta
+
+O OrbitAlert organiza a informacao em uma interface acessivel. A plataforma simula leituras orbitais, divide a cidade em setores monitorados, destaca riscos por prioridade e apresenta a acao recomendada para cada situacao.
 
 ## Tecnologias utilizadas
 
@@ -13,33 +21,33 @@ Projeto academico de Front-End para a Global Solution 2026 da FIAP. O VitaAlert 
 
 ```text
 GlobalSolutionFront/
-├── assets/
-│   ├── icon-alert.svg
-│   ├── icon-health.svg
-│   ├── icon-map.svg
-│   ├── logo.svg
-│   └── member-placeholder.svg
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── contato.html
-├── faq.html
-├── index.html
-├── integrantes.html
-├── solucao-alertas.html
-├── solucao-monitoramento.html
-├── sobre.html
-└── README.md
+|-- assets/
+|   |-- icon-alert.svg
+|   |-- icon-health.svg
+|   |-- icon-map.svg
+|   |-- logo.svg
+|   `-- member-placeholder.svg
+|-- css/
+|   `-- style.css
+|-- js/
+|   `-- script.js
+|-- contato.html
+|-- faq.html
+|-- index.html
+|-- integrantes.html
+|-- solucao-alertas.html
+|-- solucao-monitoramento.html
+|-- sobre.html
+`-- README.md
 ```
 
 ## Paginas do projeto
 
-- `index.html`: apresentacao inicial da solucao.
-- `sobre.html`: contexto, problema, proposta e tecnologias.
-- `solucao-alertas.html`: pagina extra da solucao com alertas e modal.
-- `solucao-monitoramento.html`: pagina extra da solucao com painel simulado.
-- `faq.html`: perguntas frequentes com acordeon.
+- `index.html`: apresentacao inicial do OrbitAlert e demonstracao de cenarios.
+- `sobre.html`: contexto, problema, proposta e tecnologias usadas.
+- `solucao-alertas.html`: central de alertas com prioridades, setores e modal de detalhes.
+- `solucao-monitoramento.html`: painel orbital simulado com mapa, indicadores e fluxo de uso.
+- `faq.html`: perguntas frequentes sobre dados simulados, publico-alvo e responsividade.
 - `integrantes.html`: equipe com nome, RM, turma, foto, GitHub e LinkedIn.
 - `contato.html`: formulario com validacao JavaScript.
 
@@ -48,8 +56,8 @@ GlobalSolutionFront/
 - Menu responsivo com versao mobile.
 - Validacao de formulario com mensagens de erro e `preventDefault()`.
 - Acordeon na pagina de FAQ.
-- Abas interativas na pagina inicial.
-- Modal de detalhes na pagina de alertas.
+- Abas interativas para simular eventos detectados.
+- Modal de detalhes para cada alerta orbital.
 - Layout responsivo para celular, tablet e desktop.
 
 ## Autores e creditos
@@ -64,7 +72,7 @@ Substitua os dados abaixo pelos integrantes reais:
 
 ## Imagens e icones
 
-Os icones e imagens do projeto estao na pasta `assets/` e foram criados para representar alertas, mapa, saude, logo e fotos temporarias dos integrantes.
+Os icones e imagens do projeto estao na pasta `assets/` e foram criados para representar alertas, mapa, monitoramento, logo e fotos temporarias dos integrantes.
 
 ## Link do repositorio
 

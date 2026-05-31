@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
-  <title id="title">Logo VitaAlert</title>
+  <title id="title">Logo OrbitAlert</title>
   <rect width="80" height="80" rx="16" fill="#0d6b57"/>
-  <path d="M40 14l23 12v16c0 14-9 25-23 32-14-7-23-18-23-32V26l23-12z" fill="#ffffff"/>
-  <path d="M39 28h4v18h-4zM31 37h20v4H31z" fill="#0d6b57"/>
-  <circle cx="40" cy="57" r="4" fill="#e6b84b"/>
+  <circle cx="40" cy="40" r="16" fill="#ffffff"/>
+  <path d="M14 42c9-18 41-27 53-15 8 8-3 24-23 32-16 6-31 5-35-2-3-4-1-9 5-15z" fill="none" stroke="#e6b84b" stroke-width="5"/>
+  <circle cx="40" cy="40" r="7" fill="#0d6b57"/>
+  <circle cx="59" cy="25" r="4" fill="#ffffff"/>
 </svg>
