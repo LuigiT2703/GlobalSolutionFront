@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title">
+  <title id="title">Logo VitaAlert</title>
+  <rect width="80" height="80" rx="16" fill="#0d6b57"/>
+  <path d="M40 14l23 12v16c0 14-9 25-23 32-14-7-23-18-23-32V26l23-12z" fill="#ffffff"/>
+  <path d="M39 28h4v18h-4zM31 37h20v4H31z" fill="#0d6b57"/>
+  <circle cx="40" cy="57" r="4" fill="#e6b84b"/>
+</svg>
