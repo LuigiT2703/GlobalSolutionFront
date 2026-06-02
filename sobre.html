@@ -9,64 +9,58 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="OrbitAlert - pagina inicial">
-      <img src="assets/logo.svg" alt="" class="brand__icon">
-      <span>OrbitAlert</span>
-    </a>
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" class="brand__icon"><span>Orbit<span>Alert</span></span></a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="site-nav" aria-label="Menu principal">
       <a href="index.html">Inicio</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="solucao-alertas.html">Alertas</a>
       <a href="solucao-monitoramento.html">Monitoramento</a>
+      <a href="previsao.html">Previsao IA</a>
+      <a href="solucao-alertas.html">Alertas</a>
+      <a href="sobre.html">Sobre</a>
       <a href="faq.html">FAQ</a>
       <a href="integrantes.html">Integrantes</a>
-      <a href="contato.html">Contato</a>
+      <a class="nav-cta" href="contato.html">Solicitar acesso</a>
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">Sobre o projeto</p>
-      <h1>Uma solucao para transformar dados orbitais em alertas uteis para a populacao</h1>
-      <p>O OrbitAlert apresenta uma experiencia responsiva para consultar regioes monitoradas, entender o nivel de risco e receber uma recomendacao de acao.</p>
-    </section>
-
-    <section class="section section--split">
-      <div>
-        <h2>Problema abordado</h2>
-        <p>Desastres e eventos climaticos podem atingir uma regiao antes que a populacao consiga se preparar. Quando a informacao chega tarde, moradores perdem tempo procurando rotas, pontos de apoio e orientacoes confiaveis.</p>
-      </div>
-      <div>
-        <h2>Proposta</h2>
-        <p>A plataforma simula o cruzamento de dados orbitais, localizacao e indicadores de risco para priorizar alertas, destacar areas afetadas e orientar a resposta de moradores e equipes de apoio.</p>
+      <div class="container">
+        <p class="eyebrow">Sobre o projeto</p>
+        <h1>Inteligencia ambiental baseada em satelites.</h1>
+        <p>A OrbitAlert foi pensada para apoiar cidades, defesa civil e comunidades na antecipacao de desastres naturais por meio de dados orbitais e IA.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="section__heading">
-        <p class="eyebrow">Tecnologias</p>
-        <h2>Base tecnica do Front-End</h2>
+      <div class="container split-grid">
+        <article class="glow-card">
+          <h2>Problema</h2>
+          <p>Enchentes, queimadas, secas, tempestades e deslizamentos afetam milhares de pessoas todos os anos. Muitas vezes a informacao chega tarde, fragmentada ou sem uma orientacao clara.</p>
+        </article>
+        <article class="glow-card">
+          <h2>Solucao</h2>
+          <p>A plataforma centraliza dados, classifica riscos e distribui alertas por multiplos canais. Assim, equipes conseguem agir antes que o evento vire tragedia.</p>
+        </article>
       </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>HTML semantico</h3>
-          <p>Estrutura organizada com cabecalho, menu, conteudo principal, secoes e rodape.</p>
-        </article>
-        <article class="feature-card">
-          <h3>CSS responsivo</h3>
-          <p>Layout adaptavel com grid, flexbox, variaveis e media queries.</p>
-        </article>
-        <article class="feature-card">
-          <h3>JavaScript puro</h3>
-          <p>Menu mobile, abas, FAQ, modal e validacao de formulario sem bibliotecas externas.</p>
-        </article>
+    </section>
+
+    <section class="section section--panel">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Tecnologias</p>
+          <h2>Base do front-end</h2>
+        </div>
+        <div class="channel-grid">
+          <article class="glow-card"><h3>HTML semantico</h3><p>Estrutura com header, nav, main, section e footer.</p></article>
+          <article class="glow-card"><h3>CSS responsivo</h3><p>Layout adaptavel com grid, flexbox e media queries.</p></article>
+          <article class="glow-card"><h3>JavaScript puro</h3><p>Menu mobile, modal, FAQ, simulador e validacao de formulario.</p></article>
+          <article class="glow-card"><h3>Organizacao</h3><p>Arquivos separados em `css/main.css`, `js/main.js` e assets.</p></article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>OrbitAlert - Projeto academico FIAP Global Solution 2026.</p>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><strong>OrbitAlert</strong><p>Earth Intelligence Platform</p></div></footer>
 </body>
 </html>

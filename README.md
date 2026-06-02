@@ -1,30 +1,29 @@
 # OrbitAlert
 
-Projeto academico de Front-End para a Global Solution 2026 da FIAP. O OrbitAlert e uma plataforma web responsiva que simula o uso de dados orbitais para identificar regioes vulneraveis, classificar riscos ambientais e orientar moradores com alertas, rotas seguras e pontos de apoio.
+Projeto academico de Front-End para a Global Solution 2026 da FIAP. O OrbitAlert e uma plataforma web responsiva inspirada no projeto publicado no Lovable `spaceguard-ai-edge.lovable.app`, com foco em monitoramento ambiental por satelites, previsao por IA e alertas multicanal.
 
 ## Problema
 
-Eventos climaticos e ambientais podem evoluir rapidamente, deixando moradores sem tempo para reagir. A falta de uma visualizacao simples sobre areas criticas, rotas e orientacoes dificulta a prevencao e aumenta o impacto das emergencias.
+Desastres naturais como enchentes, queimadas, secas, tempestades e deslizamentos podem evoluir rapidamente. A falta de informacao antecipada dificulta a resposta de moradores, defesa civil e equipes de apoio.
 
 ## Solucao proposta
 
-O OrbitAlert organiza a informacao em uma interface acessivel. A plataforma simula leituras orbitais, divide a cidade em setores monitorados, destaca riscos por prioridade e apresenta a acao recomendada para cada situacao.
+A OrbitAlert simula uma Earth Intelligence Platform que usa dados orbitais e inteligencia artificial para identificar riscos, acompanhar eventos em tempo real e enviar alertas por diferentes canais.
 
 ## Tecnologias utilizadas
 
 - HTML5 semantico
-- CSS3 com Flexbox, Grid e media queries
+- CSS3 responsivo
 - JavaScript puro
-- Assets SVG autorais
+- Imagens e icones em `assets/`
 
 ## Estrutura de pastas
 
 ```text
 GlobalSolutionFront/
 |-- assets/
-|   |-- icon-alert.svg
-|   |-- icon-health.svg
-|   |-- icon-map.svg
+|   |-- hero-earth.jpg
+|   |-- monitoring-map.jpg
 |   |-- logo.svg
 |   `-- member-placeholder.svg
 |-- css/
@@ -35,6 +34,7 @@ GlobalSolutionFront/
 |-- faq.html
 |-- index.html
 |-- integrantes.html
+|-- previsao.html
 |-- solucao-alertas.html
 |-- solucao-monitoramento.html
 |-- sobre.html
@@ -43,25 +43,33 @@ GlobalSolutionFront/
 
 ## Paginas do projeto
 
-- `index.html`: apresentacao inicial do OrbitAlert e demonstracao de cenarios.
-- `sobre.html`: contexto, problema, proposta e tecnologias usadas.
-- `solucao-alertas.html`: central de alertas com prioridades, setores e modal de detalhes.
-- `solucao-monitoramento.html`: painel orbital simulado com mapa, indicadores e fluxo de uso.
-- `faq.html`: perguntas frequentes sobre dados simulados, publico-alvo e responsividade.
-- `integrantes.html`: equipe com nome, RM, turma, foto, GitHub e LinkedIn.
+- `index.html`: pagina inicial com hero, cobertura de desastres, funcionamento e chamada final.
+- `solucao-monitoramento.html`: painel de monitoramento com mapa orbital e alertas ativos.
+- `previsao.html`: simulador de previsao IA.
+- `solucao-alertas.html`: canais de notificacao e niveis de severidade.
+- `sobre.html`: problema, proposta e tecnologias.
+- `faq.html`: perguntas frequentes com acordeon.
+- `integrantes.html`: integrantes com nome, RM, turma, GitHub, LinkedIn e foto.
 - `contato.html`: formulario com validacao JavaScript.
 
 ## Funcionalidades
 
-- Menu responsivo com versao mobile.
-- Validacao de formulario com mensagens de erro e `preventDefault()`.
-- Acordeon na pagina de FAQ.
-- Abas interativas para simular eventos detectados.
-- Modal de detalhes para cada alerta orbital.
-- Layout responsivo para celular, tablet e desktop.
-- CSS concentrado em `css/main.css`.
-- JavaScript concentrado em `js/main.js`.
-- Scripts carregados no `<head>` com o atributo `defer`.
+- Menu responsivo com botao mobile.
+- Links de navegacao entre todas as paginas.
+- Modal de detalhes nos alertas ativos.
+- FAQ em acordeon.
+- Formulario com validacao e `preventDefault()`.
+- Simulador de risco na pagina de previsao IA.
+- Relogio e contadores operacionais atualizados em tempo real.
+- Previsao real carregada pela API publica Open-Meteo.
+- Calculo de risco por localidade com temperatura, chuva, vento e umidade.
+- Atualizacao automatica dos dados climaticos a cada 10 minutos.
+- CSS em `css/main.css`.
+- JavaScript em `js/main.js`, carregado no `<head>` com `defer`.
+
+## Dados em tempo real
+
+O projeto usa a API publica Open-Meteo para buscar dados climaticos reais de Porto Alegre, Belem, Recife, Cuiaba e Petrolina. Indicadores como satelites ativos, eventos do dia e alertas criticos sao demonstrativos, pois bases oficiais de focos de calor, deslizamentos e alertas institucionais normalmente exigem integracao especifica, permissao ou chave de API.
 
 ## Autores e creditos
 
@@ -72,10 +80,6 @@ Substitua os dados abaixo pelos integrantes reais:
 | Nome Completo 1 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
 | Nome Completo 2 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
 | Nome Completo 3 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
-
-## Imagens e icones
-
-Os icones e imagens do projeto estao na pasta `assets/` e foram criados para representar alertas, mapa, monitoramento, logo e fotos temporarias dos integrantes.
 
 ## Link do repositorio
 
