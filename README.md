@@ -27,9 +27,29 @@ GlobalSolutionFront/
 |   |-- logo.svg
 |   `-- member-placeholder.svg
 |-- css/
-|   `-- main.css
+|   |-- alertas.css
+|   |-- buttons.css
+|   |-- cards.css
+|   |-- contato.css
+|   |-- dashboard.css
+|   |-- faq.css
+|   |-- footer.css
+|   |-- global.css
+|   |-- index.css
+|   |-- integrantes.css
+|   |-- main.css
+|   |-- modal.css
+|   |-- nav.css
+|   |-- previsao.css
+|   `-- responsive.css
 |-- js/
-|   `-- main.js
+|   |-- contador.js
+|   |-- contato.js
+|   |-- faq.js
+|   |-- main.js
+|   |-- modal.js
+|   |-- nav.js
+|   `-- previsao.js
 |-- contato.html
 |-- faq.html
 |-- index.html
@@ -64,8 +84,8 @@ GlobalSolutionFront/
 - Previsao real carregada pela API publica Open-Meteo.
 - Calculo de risco por localidade com temperatura, chuva, vento e umidade.
 - Atualizacao automatica dos dados climaticos a cada 10 minutos.
-- CSS em `css/main.css`.
-- JavaScript em `js/main.js`, carregado no `<head>` com `defer`.
+- CSS organizado em arquivos separados dentro de `css/`; o `main.css` importa os demais.
+- JavaScript organizado em arquivos separados dentro de `js/`, todos carregados no `<head>` com `defer`.
 
 ## Dados em tempo real
 
