@@ -60,7 +60,6 @@ GlobalSolutionFront/
 |-- sobre.html
 `-- README.md
 ```
-
 ## Paginas do projeto
 
 - `index.html`: pagina inicial com hero, cobertura de desastres, funcionamento e chamada final.
@@ -93,20 +92,25 @@ O projeto usa a API publica Open-Meteo para buscar dados climaticos reais de Por
 
 ## Autores e creditos
 
-Substitua os dados abaixo pelos integrantes reais:
+| Nome | RM | Turma | Foto | GitHub | LinkedIn |
+| --- | --- | --- | --- | --- | --- |
+| Caua De Souza | RM573349 | 1TDSPG | `assets/member-placeholder.svg` | [cauadesouzavasconcellos-byte](https://github.com/cauadesouzavasconcellos-byte) | [LinkedIn](https://www.linkedin.com/in/cau%C3%A3-souza-b92261395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
+| Leonardo Bernard | RM570951 | 1TDSPG | `assets/member-placeholder.svg` | [bernardleonardo](https://github.com/bernardleonardo) | Pendente |
+| Luigi Tormim | RM572424 | 1TDSPG | `assets/member-placeholder.svg` | [LuigiT2703](https://github.com/LuigiT2703) | [LinkedIn](https://www.linkedin.com/in/luigi-tormim-b64738393?utm_source=share_via&utm_content=profile&utm_medium=member_ios) |
+| Pedro Henrique | RM569497 | 1TDSPG | `assets/member-placeholder.svg` | [Pedro-H-Salvatore](https://github.com/Pedro-H-Salvatore) | [LinkedIn](https://www.linkedin.com/in/pedro-salvatore-a4a2763b7/) |
 
-| Nome | RM | Turma | GitHub | LinkedIn |
-| --- | --- | --- | --- | --- |
-| Nome Completo 1 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
-| Nome Completo 2 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
-| Nome Completo 3 | RM000000 | 1TDS | https://github.com/ | https://www.linkedin.com/ |
+## Imagens e icones
 
+- `assets/logo.svg`: logo do OrbitAlert.
+- `assets/hero-earth.jpg`: imagem principal da pagina inicial.
+- `assets/monitoring-map.jpg`: mapa orbital usado no monitoramento.
+- `assets/member-placeholder.svg`: imagem temporaria dos integrantes. Substituir pelas fotos reais antes da entrega.
 ## Link do repositorio
 
 Adicione aqui o link publico do GitHub:
 
 ```text
-https://github.com/seu-usuario/seu-repositorio
+https://github.com/LuigiT2703/GLOBAL-SOLUTION
 ```
 
 ## Contato

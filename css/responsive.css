@@ -1,3 +1,14 @@
+@media (min-width: 1300px) {
+  .container {
+    width: min(1240px, calc(100% - 64px));
+  }
+
+  .hero__content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
 @media (max-width: 980px) {
   .menu-toggle {
     display: inline-block;
@@ -37,6 +48,60 @@
   .contact-layout {
     grid-template-columns: 1fr 1fr;
   }
+
+  .hero__content {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section,
+  .page-hero {
+    padding: 54px 0;
+  }
+
+  .site-header {
+    min-height: 68px;
+  }
+
+  .site-nav {
+    top: 68px;
+  }
+
+  .stats-grid,
+  .metric-row,
+  .disaster-grid,
+  .channel-grid,
+  .severity-grid,
+  .live-weather-grid,
+  .forecast-table,
+  .team-grid,
+  .split-grid,
+  .monitor-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .alert-card div,
+  .footer-grid,
+  .live-card__top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 620px) {
@@ -70,5 +135,53 @@
   .footer-grid {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding-inline: 14px;
+  }
+
+  .brand {
+    font-size: 0.98rem;
+  }
+
+  .brand__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: 2.15rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  .stats-grid article,
+  .metric-row article,
+  .glow-card,
+  .member-card,
+  .severity-box,
+  .contact-form,
+  .prediction-panel,
+  .live-card {
+    padding: 18px;
+  }
+
+  .live-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .map-alert {
+    width: 10px;
+    height: 10px;
+  }
+
+  .modal__box {
+    padding: 22px;
   }
 }
